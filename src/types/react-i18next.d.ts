@@ -6,8 +6,7 @@ declare module 'react-i18next' {
   interface CustomTypeOptions {
     returnNull: false;
   }
-}
-
-declare module 'react-i18next' {
-  export type ReactI18NextChildren = ReactNode;
+  
+  // Override the ReactI18NextChildren type completely
+  type ReactI18NextChildren = ReactNode;
 }
